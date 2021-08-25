@@ -1,0 +1,40 @@
+
+@id=1
+GET https://retounab.herokuapp.com/partido/
+
+###
+GET https://retounab.herokuapp.com/partido/{{id}}
+
+
+###
+POST https://retounab.herokuapp.com/partido/
+content-type: application/json
+
+
+    {
+    "usuario":"1",
+    "local":1,
+    "visitante":2,
+    "fecha":"2021-08-09T20:41:25.000+00:00",
+    "golLocal":1,
+    "golVisitante":1
+    }
+
+
+###
+POST https://retounab.herokuapp.com/partido/
+content-type: application/json
+
+{
+    "id":5,
+    "usuario":"1",
+    "local":1,
+    "visitante":2,
+    "fecha":"2021-08-09T20:41:25.000+00:00",
+    "golLocal":1,
+    "golVisitante":1
+
+}
+
+###
+DELETE  https://retounab.herokuapp.com/partido/3

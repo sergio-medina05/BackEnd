@@ -1,0 +1,46 @@
+
+@id=3
+@prioridad=5
+GET https://retounab.herokuapp.com/equipo/
+
+###
+GET https://retounab.herokuapp.com/equipo/{{id}}
+
+
+###
+POST https://retounab.herokuapp.com/equipo/
+content-type: application/json
+
+{
+    "nombre":"UCC"
+
+}
+
+###
+POST https://retounab.herokuapp.com/equipo/
+content-type: application/json
+
+{
+    "id":1,
+    "nombre":"UNAB"
+
+}
+
+###
+PUT https://retounab.herokuapp.com/equipo/{{id}}
+content-type: application/json
+
+{
+    "id":1,
+    "nombre":"UNAB"
+
+}
+
+###
+DELETE  https://retounab.herokuapp.com/equipo/12
+content-type: application/json
+
+{
+    "registro":"Borrado"
+
+}

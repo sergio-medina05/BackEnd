@@ -1,0 +1,32 @@
+
+@id=10
+@prioridad=5
+GET https://retounab.herokuapp.com/usuario/
+
+###
+GET https://retounab.herokuapp.com/usuario/{{id}}
+
+
+###
+POST https://retounab.herokuapp.com/usuario/
+content-type: application/json
+
+{
+    "nombre":"Javier",
+    "correo":"j@gmail.com",
+    "username":"Javier",
+    "password":"Javier"
+}
+
+###
+POST https://retounab.herokuapp.com/usuario/
+content-type: application/json
+
+{
+    "id":12,
+    "nombre":"UNAB1"
+
+}
+
+###
+DELETE  https://retounab.herokuapp.com/usuario/12
